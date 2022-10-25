@@ -1,2 +1,3 @@
 # gaofei-hugo
 
+blog
