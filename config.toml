@@ -5,7 +5,7 @@
 # For developpers, if you modify this theme, put your images in `source/images` folder and
 # use grunt task `build` to synchronize assets
 
-baseURL = "https://example.org/"
+baseURL = "https://sxfeigao.github.io/"
 
 # 语言
 languageCode = "en-us"
