@@ -1,6 +1,14 @@
 ---
-title: "My First Post"
-date: 2022-10-25
+title: 我的第一篇文章
+slug: my-first-post
+date: 2022-10-27
+categories:
+- 个人随笔
+- 兴趣
+tags:
+- chinese
+thumbnailImagePosition: left
+thumbnailImage: //d1u9biwaxjngwg.cloudfront.net/chinese-test-post/vintage-140.jpg
 ---
 
 

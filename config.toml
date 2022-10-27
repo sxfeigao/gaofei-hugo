@@ -5,11 +5,12 @@
 # For developpers, if you modify this theme, put your images in `source/images` folder and
 # use grunt task `build` to synchronize assets
 
+# 域名
 baseURL = "https://sxfeigao.github.io/"
 
-# 语言
-languageCode = "en-us"
-defaultContentLanguage = "en-us"
+# 语言 zh-cn: 中国大陆汉语 en-us: 美国英语
+languageCode = "zh-cn"
+defaultContentLanguage = "zh-cn"
 
 # 网站标题
 title = "高飞的个人网站"
@@ -19,7 +20,10 @@ theme = "hugo-tranquilpeak-theme"
 
 disqusShortname = "hugo-tranquilpeak-theme"
 # googleAnalytics = "UA-123-45"
+
+# 分页大小，每页10条
 paginate = 10
+# 规范页面
 canonifyurls = true
 
 [permalinks]
@@ -35,6 +39,7 @@ canonifyurls = true
 # ------
 [markup]
   # Set startLevel = 1 to support # title (<h1>title</h1>) otherwise table of content is blank/empty
+  # 设置文章开头自动生成目录等级
   [markup.tableOfContents]
     endLevel = 3
     ordered = false
@@ -45,15 +50,15 @@ canonifyurls = true
 # ------
 [author]
   name = "高飞"
-  bio = "Super bio with markdown support **COOL**"
-  job = "Your job title"
+  bio = "知己知彼，百战不殆 —— **高尔基**"
+  job = "XXX大学博士生导师"
   location = "China"
   # Your Gravatar email. Overwrite `author.picture` everywhere in the blog
-  gravatarEmail = "sxfeigao@126.com"
+  # gravatarEmail = "sxfeigao@126.com"
 
   # Your profile picture
   # Overwritten by your gravatar image if `author.gravatarEmail` is filled
-  picture = ""
+  picture = "images/images.jpeg"
 
   # Your Twitter username without the @. E.g : thibaudlepretre
   # twitter = "thibaudlepretre"
@@ -61,7 +66,7 @@ canonifyurls = true
   # googlePlus = "+ThibaudLepretre"
 
 # ------------
-# Sidebar menu
+# Sidebar menu 主菜单
 # ------------
 [[menu.main]]
   weight = 1
@@ -94,19 +99,25 @@ canonifyurls = true
   pre = "<i class=\"sidebar-button-icon fas fa-lg fa-question\" aria-hidden=\"true\"></i>"
   url = "/#about"
 
+# ------------
+# 链接
+# ------------
 [[menu.links]]
   weight = 1
   identifier = "github"
   name = "GitHub"
   pre = "<i class=\"sidebar-button-icon fab fa-lg fa-github\" aria-hidden=\"true\"></i>"
-  url = "https://github.com/kakawait"
-[[menu.links]]
-  weight = 2
-  identifier = "stackoverflow"
-  name = "Stack Overflow"
-  pre = "<i class=\"sidebar-button-icon fab fa-lg fa-stack-overflow\" aria-hidden=\"true\"></i>"
-  url = "https://stackoverflow.com/users/636472/kakawait"
+  url = "https://github.com/sxfeigao"
+#[[menu.links]]
+  #weight = 2
+  #identifier = "stackoverflow"
+  #name = "Stack Overflow"
+  #pre = "<i class=\"sidebar-button-icon fab fa-lg fa-stack-overflow\" aria-hidden=\"true\"></i>"
+  #url = "https://stackoverflow.com/users/636472/kakawait"
 
+# ------------
+# 设置RSS订阅
+# ------------
 [[menu.misc]]
   weight = 1
   identifier = "rss"
@@ -115,29 +126,29 @@ canonifyurls = true
   url = "/index.xml"
 
 # -------------
-# Customization
+# Customization 自定义配置
 # -------------
 [params]
   # -----------
-  # Description
+  # Description 描述
   # -----------
-  description = "Hugo tranquilpeak theme demo"
+  description = "这是用 Hugo 创建的个人主页"
 
   # ------------------
-  # Syntax highlighter
+  # Syntax highlighter 语法高亮，代码关键字等
   # ------------------
   # Syntax highlighter, possible choice between: "highlight.js" and "prism.js"
   # You can comment it to disable syntax highlighting
   syntaxHighlighter = "highlight.js"
 
   # -----------
-  # Date format
+  # Date format 时间格式化
   # -----------
   # Customize date format use to render blog post date, categories and other
   # You must use date format used by Go Time package https://golang.org/pkg/time/
   # Months (not work with short month like "jan", "feb", etc) are translated if translation exists on i18n folders
   # Default format is: January 2, 2006
-  #  dateFormat = "2 January 2006"
+  dateFormat = "2006-01-02"
 
   # ---------------------------
   # Posts related configuration
@@ -157,7 +168,7 @@ canonifyurls = true
   #  swapPaginator = true
 
   # ---------------------
-  # Sidebar configuration
+  # Sidebar configuration 导航栏设置
   # ---------------------
   # Customization
   # Define the behavior of the sidebar
@@ -179,7 +190,7 @@ canonifyurls = true
   #    url = "/#about"
 
   # -------------------
-  # Media configuration
+  # Media configuration 多媒体资源配置，图片视频音频等
   # -------------------
   # Your blog cover picture. I STRONGLY recommend you to use a CDN to speed up loading of pages.
   # There is many free CDN like Cloudinary or you can also use indirectly
@@ -194,10 +205,12 @@ canonifyurls = true
 
   # Display thumbnail image of each post on index pages (false: disabled, true: enabled)
   thumbnailImage = true
+
   # Display thumbnail image at the right of title in index pages (`right`, `left` or `bottom`)
   # Set this value to `right` if you have old posts to keep the old style on them
   # and define `thumbnailImagePosition` on a post to overwrite this setting
   thumbnailImagePosition = "bottom"
+
   # Automatically select the cover image or the first photo from the gallery of a post if there is no thumbnail image as the thumbnail image
   # Set this value to `true` if you have old posts that use the cover image or the first photo as the thumbnail image
   # and set `autoThumbnailImage` to `false` on a post to overwrite this setting
@@ -289,7 +302,7 @@ canonifyurls = true
     defer = true
 
   # ---------------
-  # Sharing options
+  # Sharing options 分享
   # ---------------
   # Comment and uncomment to enable or disable sharing options
   # If you wanna add a sharing option, read user documentation :
@@ -331,7 +344,7 @@ canonifyurls = true
 #    url = "https://news.ycombinator.com/submitlink?u=%s"
 
   # -------------------
-  # Integrated services
+  # Integrated services 集成第三方服务，后续完善
   # -------------------
   # Gravatar
   #  >> See Author section
@@ -346,7 +359,7 @@ canonifyurls = true
   #  fbAppId =
 
   # --------------
-  # Comment system
+  # Comment system 评论区，后续配置
   # --------------
   [params.comment]
     [params.comment.disqus]
@@ -360,7 +373,7 @@ canonifyurls = true
       # repo =
       # See all options: https://github.com/gitalk/gitalk#options
       [params.comment.gitalk.options]
-        language = "en"
+        language = "zh-cn"
         perPage = 10
         distractionFreeMode = false
         enableHotKey = true
@@ -376,13 +389,13 @@ canonifyurls = true
   #  icon: search
   #  class: st-search-show-outputs
   [params.header.rightLink]
-    class = ""
-    icon = "http:/localhost:1313/tx.png"
-    url = "/#about"
+    class = "st-search-show-outputs"
+    icon = "search"
+    url = "/#search"
 
   # --------------------
-  # Footer configuration
+  # Footer configuration 页脚版权声明，备案等自定义
   # --------------------
   # Customize copyright value "© 2017 <CUSTOMIZATION>. All Rights Reserved"
-  #  [params.footer]
-  #    copyright = "<a href=\"https://github.com/kakawait\">kakawait</a>"
+  [params.footer]
+    copyright = "<a href=\"https://github.com/sxfeigao\">sxfeigao</a>"
