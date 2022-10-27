@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on 高飞的个人网站</title>
+    <link>https://sxfeigao.github.io/tags/</link>
+    <description>Recent content in Tags on 高飞的个人网站</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 27 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://sxfeigao.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>chinese</title>
+      <link>https://sxfeigao.github.io/tags/chinese/</link>
+      <pubDate>Thu, 27 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://sxfeigao.github.io/tags/chinese/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
